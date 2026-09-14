@@ -19,7 +19,7 @@ public class GuiMainMenuMixin {
 
     @Inject(method = "initGui", at = @At("HEAD"))
     private void tf$disableRealms(CallbackInfo ci) {
-        this.f_45412987 = !TimelessFix.CONFIG.disableRealms;
+        this.f_45412987 = TimelessFix.CONFIG.disableRealms;
     }
 
     @Inject(method = "addSingleplayerMultiplayerButtons", at = @At(value = "RETURN"))
