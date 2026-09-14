@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.At;
 @Mixin(GuiContainer.class)
 public class GuiContainerMixin {
     @WrapOperation(method = "mouseClicked", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/Minecraft;displayGuiScreen(Lnet/minecraft/client/gui/GuiScreen;)V"))
-    void bfu$closeMenu(Minecraft instance, GuiScreen guiScreenIn, Operation<Void> original) {
+    void tf$closeMenu(Minecraft instance, GuiScreen guiScreenIn, Operation<Void> original) {
         instance.thePlayer.closeScreen();
     }
 }
