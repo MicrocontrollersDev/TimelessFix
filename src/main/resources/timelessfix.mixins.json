@@ -39,6 +39,8 @@
     "allocation_rate.RenderMixin",
     "allocation_rate.WorldMixin",
     "bugfix.EntityLivingBaseMixin",
+    "bugfix.EntityRendererMixin",
+    "bugfix.GuiContainerMixin",
     "bugfix.GuiIngameMixin",
     "bugfix.GuiScreenBookMixin",
     "bugfix.MinecraftMixin",
