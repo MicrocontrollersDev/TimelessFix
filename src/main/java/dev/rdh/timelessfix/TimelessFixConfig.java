@@ -19,6 +19,7 @@ public final class TimelessFixConfig {
 
 	public boolean releaseCrashReserve;
 	public boolean modernParallax;
+	public boolean disableRealms;
 
 	public static TimelessFixConfig load() {
 		if (Files.isRegularFile(PATH)) {
