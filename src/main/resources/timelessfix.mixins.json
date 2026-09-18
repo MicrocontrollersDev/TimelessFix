@@ -53,6 +53,7 @@
     "bugfix.PlayerRendererMixin",
     "bugfix.RendererLivingEntityMixin",
     "bugfix.RenderGlobalMixin",
+    "bugfix.ServerAddressMixin",
     "bugfix.RenderWitherMixin",
     "core.TimerMixin",
     "memory_management.ClientPlayNetworkingImplMixin",
