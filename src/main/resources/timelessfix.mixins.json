@@ -51,6 +51,7 @@
     "bugfix.PlayerRendererMixin",
     "bugfix.RendererLivingEntityMixin",
     "bugfix.RenderGlobalMixin",
+    "bugfix.RenderWitherMixin",
     "core.TimerMixin",
     "memory_management.ClientPlayNetworkingImplMixin",
     "memory_management.MinecraftMixin",
