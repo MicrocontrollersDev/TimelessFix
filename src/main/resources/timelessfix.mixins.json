@@ -48,6 +48,7 @@
     "bugfix.LayerWithAuraMixin",
     "bugfix.MinecraftMixin",
     "bugfix.PlayerRendererMixin",
+    "bugfix.RendererLivingEntityMixin",
     "bugfix.RenderGlobalMixin",
     "core.TimerMixin",
     "memory_management.ClientPlayNetworkingImplMixin",
