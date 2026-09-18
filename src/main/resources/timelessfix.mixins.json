@@ -49,6 +49,7 @@
     "bugfix.LayerSpiderEyesMixin",
     "bugfix.LayerWithAuraMixin",
     "bugfix.MinecraftMixin",
+    "bugfix.ModelVillagerMixin",
     "bugfix.PlayerRendererMixin",
     "bugfix.RendererLivingEntityMixin",
     "bugfix.RenderGlobalMixin",
