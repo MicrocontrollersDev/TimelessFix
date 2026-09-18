@@ -43,6 +43,7 @@
     "bugfix.EntityRendererMixin",
     "bugfix.GuiContainerMixin",
     "bugfix.GuiIngameMixin",
+    "bugfix.GuiScreenAddServerMixin",
     "bugfix.GuiPlayerTabOverlayMixin",
     "bugfix.GuiScreenBookMixin",
     "bugfix.LayerCreeperChargeMixin",
