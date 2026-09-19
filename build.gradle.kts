@@ -21,7 +21,7 @@ object Versions {
 }
 
 loom {
-    accessWidenerPath = file("src/main/resources/timelessfix.classtweaker")
+    accessWidenerPath = file("src/main/resources/sarcio.classtweaker")
 }
 
 ploceus {
