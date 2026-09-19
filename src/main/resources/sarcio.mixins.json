@@ -18,6 +18,7 @@
     "bugfix.EntityMixin",
     "bugfix.ItemStackMixin",
     "bugfix.ScoreboardMixin",
+    "bugfix.StatBaseMixin",
     "bugfix.WorldMixin",
     "core.DataWatcherMixin",
     "core.LongHashMapMixin",
