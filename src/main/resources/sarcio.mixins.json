@@ -54,6 +54,7 @@
     "bugfix.LayerSpiderEyesMixin",
     "bugfix.LayerWithAuraMixin",
     "bugfix.MinecraftMixin",
+    "bugfix.ModelPlayerMixin",
     "bugfix.ModelVillagerMixin",
     "bugfix.NetHandlerPlayClientMixin",
     "bugfix.PlayerRendererMixin",
