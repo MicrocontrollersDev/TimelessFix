@@ -17,6 +17,7 @@
     "bugfix.BlockCactusMixin",
     "bugfix.ChunkMixin",
     "bugfix.EntityMixin",
+    "bugfix.EntityXPOrbMixin",
     "bugfix.ItemStackMixin",
     "bugfix.ScoreboardMixin",
     "bugfix.StatBaseMixin",
