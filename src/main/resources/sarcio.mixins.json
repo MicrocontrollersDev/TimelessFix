@@ -43,6 +43,7 @@
     "allocation_rate.RenderMixin",
     "allocation_rate.WorldMixin",
     "bugfix.BlockFluidRendererMixin",
+    "bugfix.EffectRendererMixin",
     "bugfix.EntityLivingBaseMixin",
     "bugfix.EntityRendererMixin",
     "bugfix.GuiContainerMixin",
