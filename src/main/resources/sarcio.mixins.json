@@ -46,6 +46,7 @@
   ],
   "client": [
     "allocation_rate.EffectRendererMixin",
+    "allocation_rate.EntityOtherPlayerMPMixin",
     "allocation_rate.FontRendererMixin",
     "allocation_rate.LayerArmorBaseMixin",
     "allocation_rate.RendererLivingEntityMixin",
