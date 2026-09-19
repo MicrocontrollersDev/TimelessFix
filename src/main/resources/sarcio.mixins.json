@@ -70,6 +70,7 @@
     "bugfix.PlayerRendererMixin",
     "bugfix.RendererLivingEntityMixin",
     "bugfix.RenderGlobalMixin",
+    "bugfix.RenderFishMixin",
     "bugfix.RenderArrowMixin",
     "bugfix.RenderManagerMixin",
     "bugfix.RenderWitherMixin",
