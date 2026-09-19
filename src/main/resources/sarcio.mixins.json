@@ -53,6 +53,7 @@
     "bugfix.EntityRendererMixin",
     "bugfix.FontRendererMixin",
     "bugfix.GuiContainerMixin",
+    "bugfix.GuiGameOverMixin",
     "bugfix.GuiIngameMixin",
     "bugfix.GuiPlayerTabOverlayMixin",
     "bugfix.GuiScreenAddServerMixin",
