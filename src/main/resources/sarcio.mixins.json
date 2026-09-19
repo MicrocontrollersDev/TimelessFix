@@ -74,6 +74,7 @@
     "bugfix.ServerListMixin",
     "bugfix.ServerSelectionListMixin",
     "bugfix.SoundManagerMixin",
+    "bugfix.WorldHorizonMixin",
     "bugfix.TileEntityPistonRendererMixin",
     "bugfix.WorldRendererMixin",
     "core.TimerMixin",
