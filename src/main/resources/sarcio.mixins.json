@@ -12,6 +12,7 @@
     "allocation_rate.EntityTameableMixin",
     "allocation_rate.EnumFacingMixin",
     "allocation_rate.EnumFacingPlaneMixin",
+    "allocation_rate.GameRulesValueMixin",
     "allocation_rate.WorldCollisionMixin",
     "allocation_rate.WorldLightingMixin",
     "bugfix.BlockCactusMixin",
