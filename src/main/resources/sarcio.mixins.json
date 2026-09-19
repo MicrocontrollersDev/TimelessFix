@@ -55,6 +55,7 @@
     "bugfix.GuiContainerMixin",
     "bugfix.GuiGameOverMixin",
     "bugfix.GuiIngameMixin",
+    "bugfix.GuiNewChatMixin",
     "bugfix.GuiPlayerTabOverlayMixin",
     "bugfix.GuiScreenAddServerMixin",
     "bugfix.GuiScreenBookMixin",
