@@ -1,5 +1,6 @@
 package dev.rdh.sarcio.mixin;
 
+import dev.rdh.sarcio.Asm;
 import net.fabricmc.loader.api.FabricLoader;
 import org.objectweb.asm.tree.*;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
@@ -45,6 +46,8 @@ public class SarcioMixinPlugin implements IMixinConfigPlugin {
 
 	@Override
 	public void postApply(String targetClassName, ClassNode targetClass, String mixinClassName, IMixinInfo mixinInfo) {
-
+		if (mixinClassName.endsWith("core.LazyLoadBaseMixin")) {
+			Asm.asmLazyLoadBase(targetClass);
+		}
 	}
 }

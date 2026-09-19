@@ -22,6 +22,10 @@ object Versions {
 
 loom {
     accessWidenerPath = file("src/main/resources/sarcio.classtweaker")
+
+    runs.named("client") {
+        jvmArguments.add("-Dmixin.debug.export=true")
+    }
 }
 
 ploceus {
