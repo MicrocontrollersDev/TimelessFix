@@ -1,4 +1,4 @@
-package dev.rdh.timelessfix.mixin.memory_management;
+package dev.rdh.sarcio.mixin.bugfix;
 
 import com.llamalad7.mixinextras.injector.v2.WrapWithCondition;
 import net.minecraft.client.renderer.entity.layers.LayerArrow;
