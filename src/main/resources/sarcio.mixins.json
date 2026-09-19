@@ -69,6 +69,7 @@
     "bugfix.ModelPlayerMixin",
     "bugfix.ModelVillagerMixin",
     "bugfix.NetHandlerPlayClientMixin",
+    "bugfix.PacketThreadUtilRunnableMixin",
     "bugfix.UtilMixin",
     "bugfix.PlayerRendererMixin",
     "bugfix.RendererLivingEntityMixin",
