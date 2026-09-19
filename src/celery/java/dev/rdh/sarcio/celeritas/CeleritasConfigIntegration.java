@@ -51,12 +51,6 @@ public final class CeleritasConfigIntegration implements OptionStorage<SarcioCon
 				.setBinding((config, value) -> config.disableRealms = value,
 						config -> config.disableRealms)
 				.build())
-			.add(OptionImpl.createBuilder(boolean.class, INSTANCE)
-				.setId(id("disable_realms"))
-				.setControl(TickBoxControl::new)
-				.setBinding((config, value) -> config.disableRealms = value,
-						config -> config.disableRealms)
-				.build())
 			.build();
 
 		return new OptionPage(id("options"), text("pages.sarcio"), List.of(memory));
