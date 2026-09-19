@@ -46,6 +46,7 @@
     "bugfix.EffectRendererMixin",
     "bugfix.EntityLivingBaseMixin",
     "bugfix.EntityRendererMixin",
+    "bugfix.FontRendererMixin",
     "bugfix.GuiContainerMixin",
     "bugfix.GuiIngameMixin",
     "bugfix.GuiPlayerTabOverlayMixin",
