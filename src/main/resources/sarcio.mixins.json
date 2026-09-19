@@ -82,6 +82,7 @@
     "bugfix.SoundManagerMixin",
     "bugfix.WorldHorizonMixin",
     "bugfix.TileEntityPistonRendererMixin",
+    "bugfix.TileEntitySkullRendererMixin",
     "bugfix.WorldRendererMixin",
     "core.TimerMixin",
     "memory_management.MinecraftMixin",
