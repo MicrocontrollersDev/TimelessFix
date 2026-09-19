@@ -56,6 +56,7 @@
     "bugfix.GuiScreenBookMixin",
     "bugfix.LayerArrowMixin",
     "bugfix.LayerCreeperChargeMixin",
+    "bugfix.LayerHeldItemMixin",
     "bugfix.LayerSpiderEyesMixin",
     "bugfix.LayerWithAuraMixin",
     "bugfix.MinecraftMixin",
