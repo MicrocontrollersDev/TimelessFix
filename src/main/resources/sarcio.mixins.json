@@ -24,6 +24,7 @@
     "bugfix.WorldMixin",
     "core.DataWatcherMixin",
     "core.LongHashMapMixin",
+    "core.LazyLoadBaseMixin",
     "core.Vec3iMixin",
     "fastrandom.EntityMixin",
     "fastrandom.ItemMixin",
