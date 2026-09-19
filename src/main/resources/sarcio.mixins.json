@@ -59,6 +59,7 @@
     "bugfix.PlayerRendererMixin",
     "bugfix.RendererLivingEntityMixin",
     "bugfix.RenderGlobalMixin",
+    "bugfix.RenderManagerMixin",
     "bugfix.RenderWitherMixin",
     "bugfix.ServerAddressMixin",
     "bugfix.TileEntityPistonRendererMixin",
