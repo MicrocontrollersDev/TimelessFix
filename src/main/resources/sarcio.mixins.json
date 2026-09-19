@@ -15,6 +15,7 @@
     "allocation_rate.WorldLightingMixin",
     "bugfix.BlockCactusMixin",
     "bugfix.EntityMixin",
+    "bugfix.ItemStackMixin",
     "bugfix.ScoreboardMixin",
     "bugfix.WorldMixin",
     "core.DataWatcherMixin",
