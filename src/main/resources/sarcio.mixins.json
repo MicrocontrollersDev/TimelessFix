@@ -16,6 +16,7 @@
     "allocation_rate.WorldLightingMixin",
     "bugfix.BlockCactusMixin",
     "bugfix.ChunkMixin",
+    "bugfix.NBTTagCompoundMixin",
     "bugfix.EntityMixin",
     "bugfix.EntityXPOrbMixin",
     "bugfix.ItemStackMixin",
