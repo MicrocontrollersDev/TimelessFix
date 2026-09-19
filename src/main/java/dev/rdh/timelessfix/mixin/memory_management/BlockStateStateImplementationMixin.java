@@ -11,11 +11,16 @@ import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 
+@SuppressWarnings({"rawtypes", "unchecked"})
 @Mixin(targets = "net.minecraft.block.state.BlockState$StateImplementation")
 abstract class BlockStateStateImplementationMixin {
 	@Shadow @Final private ImmutableMap<IProperty, Comparable> properties;
 	@Unique private IBlockState[] timelessfix$transitions;
 
+	/**
+	 * @author rdh
+	 * @reason more compact state transition table
+	 */
 	@Overwrite
 	public void buildPropertyValueTable(Map<Map<IProperty, Comparable>, ?> states) {
 		int size = 0;
@@ -41,6 +46,10 @@ abstract class BlockStateStateImplementationMixin {
 		}
 	}
 
+	/**
+	 * @author rdh
+	 * @reason more compact state transition table
+	 */
 	@Overwrite
 	public <T extends Comparable<T>, V extends T> IBlockState withProperty(IProperty<T> property, V value) {
 		if (!this.properties.containsKey(property)) {
@@ -50,7 +59,7 @@ abstract class BlockStateStateImplementationMixin {
 			throw new IllegalArgumentException("Cannot set property " + property + " to " + value);
 		}
 		if (this.properties.get(property) == value) {
-			return (IBlockState) (Object) this;
+			return (IBlockState) this;
 		}
 
 		int index = 0;

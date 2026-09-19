@@ -11,11 +11,7 @@ import org.spongepowered.asm.mixin.Mixin;
 @Mixin(EnchantmentHelper.class)
 abstract class EnchantmentHelperMixin {
 	@WrapMethod(method = "applyThornEnchantments")
-	private static void clearHurtIterator(
-		EntityLivingBase user,
-		Entity attacker,
-		Operation<Void> original
-	) {
+	private static void clearHurtIterator(EntityLivingBase user, Entity attacker, Operation<Void> original) {
 		try {
 			original.call(user, attacker);
 		} finally {
@@ -24,11 +20,7 @@ abstract class EnchantmentHelperMixin {
 	}
 
 	@WrapMethod(method = "applyArthropodEnchantments")
-	private static void clearDamageIterator(
-		EntityLivingBase user,
-		Entity target,
-		Operation<Void> original
-	) {
+	private static void clearDamageIterator(EntityLivingBase user, Entity target, Operation<Void> original) {
 		try {
 			original.call(user, target);
 		} finally {

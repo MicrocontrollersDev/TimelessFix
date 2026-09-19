@@ -15,7 +15,7 @@ abstract class ClientPlayNetworkingImplMixin {
 	private static void releaseHandledPayload(
 		NamespacedIdentifier channel,
 		@Coerce Object listener,
-		@Coerce Object context,
+		@Coerce Object ctx,
 		PacketBuffer data,
 		CallbackInfo ci
 	) {

@@ -1,7 +1,6 @@
 package dev.rdh.timelessfix.mixin.textures;
 
 import java.awt.image.BufferedImage;
-import java.io.IOException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -12,6 +11,7 @@ import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Mutable;
 import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
@@ -24,7 +24,9 @@ abstract class ThreadDownloadImageDataMixin {
 	@Shadow private Thread imageThread;
 	@Shadow private boolean textureUploaded;
 
+	@Unique
 	private static final AtomicInteger THREAD_NUMBER = new AtomicInteger();
+	@Unique
 	private static final Executor EXECUTOR = Executors.newFixedThreadPool(4, task -> {
 		Thread thread = new Thread(task, "Skin Downloader #" + THREAD_NUMBER.incrementAndGet());
 		thread.setDaemon(true);
@@ -51,7 +53,7 @@ abstract class ThreadDownloadImageDataMixin {
 	}
 
 	@Inject(method = "loadTexture", at = @At("HEAD"), cancellable = true)
-	private void keepUploadedTexture(IResourceManager resourceManager, CallbackInfo ci) throws IOException {
+	private void keepUploadedTexture(IResourceManager resourceManager, CallbackInfo ci) {
 		if (this.textureUploaded && this.bufferedImage == null) {
 			ci.cancel();
 		}
