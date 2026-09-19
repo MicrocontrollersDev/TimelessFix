@@ -2,11 +2,13 @@ package dev.rdh.sarcio.mixin.bugfix;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.gui.GuiScreenWorking;
 import net.minecraft.client.settings.KeyBinding;
 import org.lwjgl.input.Keyboard;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.ModifyArg;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(Minecraft.class)
@@ -19,5 +21,10 @@ public class MinecraftMixin {
                 KeyBinding.setKeyBindState(keyCode, Keyboard.isKeyDown(keyCode));
             }
         }
+    }
+
+    @ModifyArg(method = "launchIntegratedServer", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/Minecraft;displayGuiScreen(Lnet/minecraft/client/gui/GuiScreen;)V"))
+    private GuiScreen sarcio$showWorkingScreen(GuiScreen guiScreenIn) {
+        return new GuiScreenWorking();
     }
 }
