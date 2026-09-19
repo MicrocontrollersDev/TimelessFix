@@ -66,6 +66,7 @@
     "bugfix.RenderWitherMixin",
     "bugfix.ServerAddressMixin",
     "bugfix.TileEntityPistonRendererMixin",
+    "bugfix.WorldRendererMixin",
     "core.TimerMixin",
     "memory_management.ClientPlayNetworkingImplMixin",
     "memory_management.MinecraftMixin",
