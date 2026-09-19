@@ -54,6 +54,7 @@
     "bugfix.GuiPlayerTabOverlayMixin",
     "bugfix.GuiScreenAddServerMixin",
     "bugfix.GuiScreenBookMixin",
+    "bugfix.GuiScreenMixin",
     "bugfix.LayerArrowMixin",
     "bugfix.LayerCreeperChargeMixin",
     "bugfix.LayerHeldItemMixin",
