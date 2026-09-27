@@ -15,6 +15,8 @@ abstract class EntityMixin {
 
 	@Unique private long sarcio$brightnessTick = Long.MIN_VALUE;
 	@Unique private int sarcio$brightnessValue;
+	@Unique private long sarcio$floatBrightnessTick = Long.MIN_VALUE;
+	@Unique private float sarcio$floatBrightnessValue;
 
 	@Inject(method = "getLightLevel", at = @At("HEAD"), cancellable = true)
 	private void sarcio$brightnessCacheHit(float partialTicks, CallbackInfoReturnable<Integer> cir) {
@@ -28,6 +30,21 @@ abstract class EntityMixin {
 		if (this.world != null) {
 			this.sarcio$brightnessTick = this.world.getTime();
 			this.sarcio$brightnessValue = cir.getReturnValue();
+		}
+	}
+
+	@Inject(method = "getBrightness", at = @At("HEAD"), cancellable = true)
+	private void sarcio$floatBrightnessCacheHit(float partialTicks, CallbackInfoReturnable<Float> cir) {
+		if (this.world != null && this.sarcio$floatBrightnessTick == this.world.getTime()) {
+			cir.setReturnValue(this.sarcio$floatBrightnessValue);
+		}
+	}
+
+	@Inject(method = "getBrightness", at = @At("RETURN"))
+	private void sarcio$floatBrightnessCacheStore(float partialTicks, CallbackInfoReturnable<Float> cir) {
+		if (this.world != null) {
+			this.sarcio$floatBrightnessTick = this.world.getTime();
+			this.sarcio$floatBrightnessValue = cir.getReturnValue();
 		}
 	}
 }
