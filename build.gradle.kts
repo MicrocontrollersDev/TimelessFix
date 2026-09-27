@@ -6,7 +6,7 @@ plugins {
 
 group = "dev.rdh"
 version = providers.environmentVariable("GITHUB_SHA")
-    .flatMap { sha -> providers.gradleProperty("mod_version").map { "$it-g${sha.take(7)}" } }
+    .flatMap { sha -> providers.gradleProperty("mod_version").map { "$it+${sha.take(7)}" } }
     .orElse(providers.gradleProperty("mod_version"))
     .get()
 
