@@ -5,7 +5,10 @@ plugins {
 }
 
 group = "dev.rdh"
-version = "0.1"
+version = providers.environmentVariable("GITHUB_SHA")
+    .flatMap { sha -> providers.gradleProperty("mod_version").map { "$it-g${sha.take(7)}" } }
+    .orElse(providers.gradleProperty("mod_version"))
+    .get()
 
 java.toolchain {
     languageVersion = JavaLanguageVersion.of(25)
