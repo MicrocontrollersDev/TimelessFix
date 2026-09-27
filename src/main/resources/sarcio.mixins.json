@@ -49,7 +49,10 @@
     "memory_management.world.AnvilChunkStorageMixin",
     "memory_management.network.MinecraftServerMixin",
     "memory_management.world.NodeEvaluatorMixin",
-    "memory_management.location_canon.IdentifierMixin"
+    "memory_management.location_canon.IdentifierMixin",
+    "netty.ConnectionListenerMixin",
+    "netty.LegacyQueryHandlerMixin",
+    "netty.PacketByteBufMixin"
   ],
   "client": [
     "allocation_rate.entity.EntityDisplayNameMixin",
@@ -133,7 +136,12 @@
     "textures.HttpTextureMixin",
     "tweaks.TitleScreenMixin",
     "tweaks.MinecraftMixin",
-    "tweaks.ServerListEntryWidgetMixin"
+    "tweaks.ServerListEntryWidgetMixin",
+    "tweaks.ConnectionMixin",
+    "tweaks.MultiplayerServerListPingerMixin",
+    "tweaks.ServerAddressAccessor",
+    "tweaks.ServerAddressMixin",
+    "netty.LegacyPingHandlerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
