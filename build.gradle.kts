@@ -18,9 +18,9 @@ java.toolchain {
 object Versions {
     val minecraft = "1.8.9"
     val feather = "2"
-    val osl = "0.20.3"
-    val fabric = "0.19.3"
-    val celeritas = "2.4.0-dev.5"
+    val osl = "0.21.1"
+    val fabric = "0.19.5"
+    val celeritas = "2.5.0-pre.1"
     val netty = "4.2.18.Final"
 }
 

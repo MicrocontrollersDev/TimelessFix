@@ -44,7 +44,6 @@
     "memory_management.enchantment.EnchantmentHelperMixin",
     "memory_management.enchantment.ProtectionWildcardMixin",
     "memory_management.network.NetHandlerPlayMixin",
-    "memory_management.network.OSLNetworkingLeakMixin",
     "memory_management.world.ChunkNibbleStorageMixin",
     "memory_management.world.AnvilChunkStorageMixin",
     "memory_management.network.MinecraftServerMixin",
